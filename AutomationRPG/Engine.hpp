@@ -16,10 +16,3 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	return DxLib::DxLib_End();
 }
 
-class MakeColor {
-public:
-	template<typename Int_>
-	constexpr Int_ operator()(const Int_& red_, const Int_& green_, const Int_& blue_) const noexcept {
-		return red_ * 256 * 256 + green_ * 256 + blue_;
-	}
-};
